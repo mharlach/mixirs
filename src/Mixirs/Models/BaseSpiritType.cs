@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace BarLib.Models
+namespace Mixirs.Models
 {
     public class BaseSpiritType
     {

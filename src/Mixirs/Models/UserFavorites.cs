@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using Newtonsoft.Json;
 
-namespace BarLib.Models
+namespace Mixirs.Models
 {
     public class UserFavorites : UserModelBase
     {

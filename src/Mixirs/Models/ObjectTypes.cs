@@ -1,4 +1,4 @@
-namespace BarLib.Models
+namespace Mixirs.Models
 {
     public static class ObjectTypes
     {

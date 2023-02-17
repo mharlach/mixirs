@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Newtonsoft.Json;
 
-namespace BarLib.Models
+namespace Mixirs.Models
 {
 
     public class UserBar : UserModelBase

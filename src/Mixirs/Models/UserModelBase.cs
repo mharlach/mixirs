@@ -1,6 +1,6 @@
 using Newtonsoft.Json;
 
-namespace BarLib.Models
+namespace Mixirs.Models
 {
     public abstract class UserModelBase : StorageObjectBase
     {

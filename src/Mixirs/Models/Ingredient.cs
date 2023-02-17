@@ -5,7 +5,7 @@ using Azure.Search.Documents.Indexes;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
-namespace BarLib.Models
+namespace Mixirs.Models
 {
 
     public class Ingredient : ModelBase

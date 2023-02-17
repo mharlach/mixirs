@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 using Azure.Search.Documents.Indexes;
 using Newtonsoft.Json;
 
-namespace BarLib.Models
+namespace Mixirs.Models
 {
 
     public abstract class ModelBase : StorageObjectBase
