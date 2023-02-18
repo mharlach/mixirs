@@ -18,8 +18,8 @@ defaults:
     working-directory: src
 
 jobs:
-  test:
-    name: Run Tests
+  build:
+    name: Build Project
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -29,9 +29,19 @@ jobs:
         dotnet-version: 6.0.x
     - name: Restore Packages
       run: dotnet restore
+    - name: Build
+      run: dotnet build --configuration Release --no-restore
     - name: Test
-      run: dotnet test --no-restore
+      run: dotnet test --no-build --no-restore
+    - name: Bump Versions
+      uses: SiqiLu/dotnet-bump-version@2.1.0
+      with:
+        version_files: "**/*.csproj"
+        version_mask: 0.0.1.0
+        version_overwrite: "*.*.*.*"
+        github_token: ${{secrets.GITHUB_TOKEN}}
 
+        
 
   # build:
 
