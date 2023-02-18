@@ -33,8 +33,8 @@ jobs:
       run: dotnet build --configuration Release --no-restore
     - name: Test
       run: dotnet test --no-build --no-restore
-    - name: Bump Versions
-      uses: SiqiLu/dotnet-bump-version@2.1.0
+    - name: DotNet Bump Versions
+      uses: SiqiLu/dotnet-bump-version@2.0.0
       with:
         version_files: "**/*.csproj"
         version_mask: 0.0.1.0
